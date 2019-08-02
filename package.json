@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-custom",
+  "version": "1.0.0",
+  "description": "Custom ESLint Shared Configuration",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:unoptimized": "webpack --mode=development",
+    "pretest": "eslint 'src/**/*.js'",
+    "test": "jasmine"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GraemeRJBrown/eslint-config-custom.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "GraemeRJBrown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GraemeRJBrown/eslint-config-custom/issues"
+  },
+  "homepage": "https://github.com/GraemeRJBrown/eslint-config-custom#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "jasmine": "^3.4.0",
+    "pre-commit": "^1.2.2",
+    "webpack": "^4.39.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
