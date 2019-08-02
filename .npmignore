@@ -1,0 +1,9 @@
+# Source
+src/
+
+# Specification
+spec/
+
+# Configuration
+.eslintrc.json
+webpack.config.js
