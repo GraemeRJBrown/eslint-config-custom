@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "build:unoptimized": "webpack --mode=development",
-    "pretest": "eslint 'src/**/*.js'",
+    "pretest": "eslint src/**/*.js",
     "test": "jasmine"
   },
   "pre-commit": [
